@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"math/cmplx"
 )
 
 func add(x /*int*/, y int) int {
@@ -42,4 +43,40 @@ func main() {
 
 	name := "bruh"
 	fmt.Println(name)
+
+	var (
+		age      int        = 5
+		lastName string     = "bond"
+		isTired  bool       = true
+		comp     complex128 = cmplx.Sqrt(-1)
+	)
+	fmt.Println(age, lastName, isTired, comp)
+
+	num := 5
+	flt := float64(num)
+	fmt.Println(num, flt)
+
+	const bruh = true // cant use walrus with const
+	fmt.Println(bruh)
+
+	sum := 0
+	for i := 0; i < 10; i++ {
+		sum += i
+	}
+	fmt.Println(sum)
+
+	numb := 0
+	for numb < 50 { // for doubles as while loop, no condition -> infinite loop
+		numb++
+	}
+	fmt.Println(numb)
+
+	boi := 4
+	if boi == 5 {
+		fmt.Println("boi is indeed 5")
+	}
+
+	if breh := 6; breh == 5 {
+		fmt.Println("breh is indeed 5")
+	}
 }
