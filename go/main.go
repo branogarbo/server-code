@@ -73,9 +73,9 @@ func main() {
 
 	boi := 4
 	if boi == 5 {
-		fmt.Printf("boi is indeed %g", boi)
+		fmt.Println("boi is indeed 5")
 	} else {
-		fmt.Printf("boi aint %g", boi)
+		fmt.Println("boi aint 5")
 	}
 
 	if breh := 5; breh == 5 {
