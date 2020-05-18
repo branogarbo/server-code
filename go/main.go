@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math"
 	"math/cmplx"
+	"strconv"
 )
 
 func add(x /*int*/, y int) int {
@@ -64,6 +65,12 @@ func main() {
 		sum += i
 	}
 	fmt.Println(sum)
+
+	str := ""
+	for i := 0; i < 10; i++ {
+		str += strconv.Itoa(i)
+	}
+	fmt.Println(str)
 
 	numb := 0
 	for numb < 50 { // for doubles as while loop, no condition -> infinite loop
