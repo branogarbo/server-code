@@ -32,9 +32,7 @@ func main() {
 
 		combo := []int{x, y, z}
 
-		// equation := math.Abs(float64(x-y)) == math.Abs(float64(y-z))
-
-		equation := x+y+z == 10
+		equation := x^2+y^2+z^2 == 3
 
 		sort.Ints(combo)
 
