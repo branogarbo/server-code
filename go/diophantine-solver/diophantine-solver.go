@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"sort"
 )
 
 func randI(min, max int) int {
@@ -32,9 +31,10 @@ func main() {
 
 		combo := []int{x, y, z}
 
-		equation := x^2+y^2+z^2 == 3
+		// equation := x^2+y^2+z^2 == 3
+		equation := x == 2 // test condition
 
-		sort.Ints(combo)
+		// sort.Ints(combo)
 
 		if equation && !includes(succCombos, combo) {
 			count++

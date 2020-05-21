@@ -12,7 +12,9 @@ def findcombos():
 
 		rancombo.sort()
 
-		if x**2+y**2+z**2 == 3 and rancombo not in workingcombos:
+		equation = x**2+y**2+z**2 == 3
+
+		if equation and rancombo not in workingcombos:
 			workingcombos.append(rancombo)
 			print(len(workingcombos), rancombo)
 
