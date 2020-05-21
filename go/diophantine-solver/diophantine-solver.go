@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"math"
 	"math/rand"
+	"sort"
 )
 
 func randI(min, max int) int {
@@ -23,9 +23,8 @@ func includes(slice [][]int, item []int) bool {
 
 func main() {
 	succCombos := [][]int{}
-
-	// do timing later
 	count := 0
+
 	for {
 		x := randI(0, 9)
 		y := randI(0, 9)
@@ -33,11 +32,11 @@ func main() {
 
 		combo := []int{x, y, z}
 
-		equation := math.Abs(float64(x-y)) == math.Abs(float64(y-z))
+		// equation := math.Abs(float64(x-y)) == math.Abs(float64(y-z))
 
-		// equation := x+y+z == 10
+		equation := x+y+z == 10
 
-		// sort.Ints(combo)
+		sort.Ints(combo)
 
 		if equation && !includes(succCombos, combo) {
 			count++
