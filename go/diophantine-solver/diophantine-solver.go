@@ -32,10 +32,10 @@ func main() {
 
 		combo := []int{x, y, z}
 
-		sort.Ints(combo)
-
 		// equation := x^2+y^2+z^2 == 3
-		equation := x == 2 // test condition
+		equation := combo[0] == 2 // test condition
+
+		sort.Ints(combo)
 
 		if equation && !includes(succCombos, combo) {
 			count++
