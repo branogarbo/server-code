@@ -53,8 +53,6 @@ func main() {
 
 					succCombos = append(succCombos, combo)
 					fmt.Println(count, combo)
-				} else {
-					fmt.Println(combo, "nah fam")
 				}
 
 			}
