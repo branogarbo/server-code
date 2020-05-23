@@ -2,12 +2,7 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 )
-
-func randI(min, max int) int {
-	return rand.Intn(max-min+1) + min
-}
 
 func includes(slice [][]int, item []int) bool {
 	for i := 0; i < len(slice); i++ {
