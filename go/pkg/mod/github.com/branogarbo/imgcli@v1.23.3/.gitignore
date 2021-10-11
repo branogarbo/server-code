@@ -1,0 +1,3 @@
+# ignore local examples
+
+/examples/*/*.local.*

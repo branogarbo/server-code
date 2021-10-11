@@ -1,0 +1,17 @@
+name: release-drafter
+on:
+  push:
+    branches:
+      - master
+env:
+  PRISMA_TELEMETRY_INFORMATION: "prisma-client-go release-draft.yml"
+
+jobs:
+  update-release-draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: release-drafter/release-drafter@v5
+        with:
+          config-name: release-drafter.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

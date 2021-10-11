@@ -14,6 +14,8 @@ int main() {
 	cout << "Number of rows: ";
 	cin >> iter;
 
+	if (!iter) {return 0;}
+
 	clock_t start = clock();
 
 	for (int i=0; i<iter; i++) {
